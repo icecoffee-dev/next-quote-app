@@ -6,14 +6,15 @@ function QuoteCardsList() {
   useEffect(async () => {
     const data = await fetch("http://localhost:3000/api/quotes");
     const json = await data.json();
-    setQuoteList(new Array(json));
-    console.log(json);
+    setQuoteList(json);
   }, []);
   return (
     <>
-      {quoteList.map((data) => (
-        <QuoteCard props={data} key={data.index} />
-      ))}
+      {quoteList.length === 0 ? (
+        <h1>Loading State</h1>
+      ) : (
+        quoteList.map((data) => <QuoteCard props={data} key={data.index} />)
+      )}
     </>
   );
 }
