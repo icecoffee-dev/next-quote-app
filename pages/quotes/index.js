@@ -1,13 +1,13 @@
 import Header from "../../src/components/Header";
-import QuoteCard from "../../src/components/QuoteCard";
-import QuoteCardsList from "../../src/components/QuoteCardsList";
+import QuoteQueryBoxContainer from "../../src/containers/QuoteQueryBoxContainer";
 
 export default function Quotes() {
   return (
     <>
       <Header />
-      <QuoteCard />
-      <QuoteCardsList />
+      {/* <SearchBox /> */}
+      {/* <QuoteCardsList /> */}
+      <QuoteQueryBoxContainer />
     </>
   );
 }

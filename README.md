@@ -4,15 +4,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ---
 
-### PROBLEM
-
-Issue: [setQuoteList](src/components/QuoteCardsList.jsx) is not is note setting the value of inital state to new object instead it is somehow appending it after the original value that is [] a blank array with undefined in it
-Description: Since there is no property of undefined its giving all sorts of issues
-Possible solutions:
-
-- return an empty <></> if [data](src/components/QuoteCard.jsx) === undefined
-- figure out the original issue
-
 ---
 
 ## Deploy on Vercel

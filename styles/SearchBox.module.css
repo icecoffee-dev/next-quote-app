@@ -1,0 +1,57 @@
+.searchBoxContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 10vh;
+  padding: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 2rem;
+  min-width: 50%;
+}
+
+.searchButton,
+.searchBox {
+  /*useragent button styles - nullify*/
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  outline: inherit;
+  box-sizing: border-box;
+}
+.searchBox {
+  /* my styles */
+  border: 0.1rem solid #9faaffd5;
+  height: 3rem;
+  border-radius: 0.91rem 0 0 0.91rem;
+  overflow: hidden;
+  padding: 0.8rem 0.8rem 0.8rem 0.9rem;
+  font-size: 1.7rem;
+  color: #6b67e2;
+  min-width: 100%;
+}
+
+@media (min-width: 600px) {
+}
+
+.searchButton {
+  /* my styles */
+  border: 0.1rem solid #9c88ff;
+  background-color: #9c88ff;
+  padding: 0 1.7rem 0 0.8rem;
+  font-size: 1.7rem;
+  border-radius: 0 0.91rem 0.91rem 0;
+}
+
+.searchButton:hover {
+  background-color: #8b77ee;
+  transition: all 1s ease;
+}
