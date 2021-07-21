@@ -1,10 +1,10 @@
-.header {
+.footer {
   font-size: 62.5%;
   background-color: #fff;
   display: flex;
   padding: 1rem 2rem;
   flex-wrap: wrap;
-  border-bottom: 1px solid #d3d3d3;
+  border-top: 1px solid #d3d3d3;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -39,23 +39,4 @@
   .menulistItems {
     display: none;
   }
-}
-.addToChrome {
-  /*useragent button styles - nullify*/
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  outline: inherit;
-  /* my styles */
-  color: #fff;
-  background-color: #9c88ff;
-  padding: 0.3rem 1rem;
-  cursor: pointer;
-  border-radius: 0.1rem;
-}
-.addToChrome:hover {
-  background-color: #8b77ee;
-  transition: all 1s ease;
 }

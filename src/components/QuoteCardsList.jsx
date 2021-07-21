@@ -1,6 +1,7 @@
 import { loadGetInitialProps } from "next/dist/next-server/lib/utils";
 import React, { useEffect, useState } from "react";
 import QuoteCard from "./QuoteCard";
+import style from "../../styles/QuoteCardsList.module.css";
 
 function QuoteCardsList(props) {
   const [loading, setLoading] = useState(true);
@@ -14,13 +15,15 @@ function QuoteCardsList(props) {
   }, [props.query]);
   return (
     <>
-      {loading ? (
-        <h1>Loading Users</h1>
-      ) : quoteList.length === 0 ? (
-        <h1>Nothing found</h1>
-      ) : (
-        quoteList.map((data) => <QuoteCard data={data} key={data.index} />)
-      )}
+      <section className={style.quoteCardsList}>
+        {loading ? (
+          <h1>Loading Users</h1>
+        ) : quoteList.length === 0 ? (
+          <h1>Nothing found</h1>
+        ) : (
+          quoteList.map((data) => <QuoteCard data={data} key={data.index} />)
+        )}
+      </section>
     </>
   );
 }

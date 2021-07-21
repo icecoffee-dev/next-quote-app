@@ -1,5 +1,9 @@
 import Head from "next/head";
+import Footer from "../src/components/Footer";
 import Header from "../src/components/Header";
+import PhotoWindowContainer from "../src/containers/PhotoWindowContainer";
+import style from "../styles/IndexPage.module.css";
+
 export default function Home() {
   return (
     <>
@@ -9,6 +13,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <main>
+        <div className={style.headlineContainer}>
+          <h1 className={style.headline}>
+            A new motivational quote in every new tab.
+          </h1>
+        </div>
+        <PhotoWindowContainer
+          props={{ quote: "some quote i dont care about" }}
+        />
+        <Footer />
+      </main>
     </>
   );
 }

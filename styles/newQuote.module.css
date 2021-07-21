@@ -1,0 +1,24 @@
+.main {
+  min-height: 80vh;
+  margin-bottom: 7rem;
+}
+.h1 {
+  margin: 4rem 0 5rem 0;
+  text-align: center;
+}
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 55vw;
+  margin: auto;
+}
+.form {
+  min-width: 55%;
+}
+.rules {
+  order: 2;
+  max-width: 40%;
+  font-size: 1.06rem;
+}
+/*# sourceMappingURL=newQuote.css.map */

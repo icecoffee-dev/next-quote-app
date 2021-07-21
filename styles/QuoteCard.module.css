@@ -1,0 +1,19 @@
+.quoteCard {
+  margin: 1rem;
+  box-shadow: 0rem 0.1rem 0.1rem rgba(102, 102, 102, 0.367);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+}
+.quoteCard:hover {
+  border: 1px solid rgb(156, 136, 255);
+}
+
+.info {
+  position: relative;
+  bottom: 0;
+  margin-bottom: 0;
+}

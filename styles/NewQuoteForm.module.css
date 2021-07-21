@@ -1,0 +1,59 @@
+.form {
+  font-size: 1rem;
+  margin: 1rem 6rem 1rem -2rem;
+  background-color: #eee;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 3rem 1rem 0 2rem;
+}
+
+.input,
+.textarea {
+  /*useragent button styles - nullify*/
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  outline: inherit;
+  /* my styles */
+  background-color: #fff;
+  margin: 1rem 0rem;
+  width: 70%;
+  font-size: 1.5rem;
+}
+
+.input {
+  margin-top: 2rem;
+}
+
+.checkboxLabel {
+  margin-top: 4rem;
+}
+
+.checkbox {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
+}
+
+.submitButton {
+  /*useragent button styles - nullify*/
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  outline: inherit;
+  /* my styles */
+  margin-top: 1rem;
+  color: #fff;
+  background-color: #9c88ff;
+  padding: 0.3rem 1rem;
+  cursor: pointer;
+  border-radius: 0.1rem;
+}
+.submitButton:hover {
+  background-color: #8b77ee;
+  transition: all 1s ease;
+}
