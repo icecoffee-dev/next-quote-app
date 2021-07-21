@@ -1,0 +1,43 @@
+.container {
+  margin-top: 2rem;
+  box-shadow: 0rem 1rem 2rem #777;
+  max-width: 60vw;
+  margin: auto;
+  background-color: #666;
+  overflow: hidden;
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin-bottom: 8rem;
+}
+
+.header {
+  padding-top: 2.5rem;
+}
+
+.photoWindowContainer {
+  position: relative;
+  background: linear-gradient(
+      rgba(102, 102, 102, 0.5),
+      rgba(102, 102, 102, 0.71)
+    ),
+    url("../public/images/steve-jobs.jpg") no-repeat;
+  object-fit: cover;
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    min-width: 100%;
+  }
+}
+
+.quote {
+  margin: auto;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  color: #eee;
+  font-size: 3rem;
+}

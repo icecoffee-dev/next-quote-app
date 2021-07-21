@@ -1,0 +1,8 @@
+.quoteCardsList {
+  max-width: 80vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1rem;
+  min-height: 80vh;
+}
